@@ -7,7 +7,7 @@ DigitalOut  led1(LED1, 1);
 static EventQueue eventQueue(/* event count */ 10 * EVENTS_EVENT_SIZE);
 
 const static char     DEVICE_NAME[] = "CHANGE-DEVICE-NAME";
-static const char * uuid16_list[] = {"UUID_ABCDEFGHIJK"};
+static const uint8_t uuid16_list[] = {0xAB, 0xCD};
 
 void disconnectionCallback(const Gap::DisconnectionCallbackParams_t *params)
 {
